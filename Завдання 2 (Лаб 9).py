@@ -51,11 +51,13 @@ while True:
         InspectorDict = {"LastName": LastName, "Name": Name, "Surname": Surname, "BornDate": BornDate, "TypeOfCrime": TypeCrime, "Judgment": Judgment}
 
         '''---Заповнення словника---'''
-
-        arrayOfInspectorDict.append(InspectorDict)
-        print(InspectorDict)
-        print(arrayOfInspectorDict)
-
+        InspectorDict["LastName"] = LastName
+        InspectorDict["Name"] = Name
+        InspectorDict["Surname"] = Surname
+        InspectorDict["BornDate"] = BornDate
+        InspectorDict["TypeCrime"] = TypeCrime
+        InspectorDict["Judgment"] = Judgment
+     
 
         arrayOfInspectorDict.append(InspectorDict)
     elif choose == 3:
